@@ -1,0 +1,19 @@
+--- vendor/elgg/elgg/engine/load.php	2015-02-08 17:59:26.232823123 +0100
++++ vendor/tmp/elgg/engine/load.php	2015-02-08 13:00:39.281818484 +0100
+@@ -10,10 +10,12 @@
+ 
+ require_once "$lib_dir/autoloader.php";
+ 
+-$autoload_path = dirname(__DIR__) . '/vendor/autoload.php';
+-$autoload_available = include_once($autoload_path);
+-if (!$autoload_available) {
+-	die("Couldn't include '$autoload_path'. Did you run `composer install`?");
++if (!defined('ELGG_PHPUNIT_AUTOLOADER')) {
++    $autoload_path = dirname(__DIR__) . '/vendor/autoload.php';
++    $autoload_available = include_once($autoload_path);
++    if (!$autoload_available) {
++	    die("Couldn't include '$autoload_path'. Did you run `composer install`?");
++    }
+ }
+ 
+ // set up autoloading and DIC

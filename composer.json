@@ -1,0 +1,15 @@
+{
+    "name": "foogile/elgg-phpunit",
+    "description": "PHPUnit setup for Elgg",
+    "license": "GPLv3",
+    "authors": [
+        {
+            "name": "Stian Liknes",
+            "email": "stianlik@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "elgg/elgg": "dev-master"
+    }
+}

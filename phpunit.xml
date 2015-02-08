@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="tests/bootstrap.php" colors="true" backupGlobals="false">
+    <testsuites>
+        <testsuite name="My plugin tests">
+            <directory>tests</directory>
+        </testsuite>
+    </testsuites>
+    <php>
+        <includePath>./tests</includePath>
+
+        <!-- Request -->
+        <server name="SERVER_PORT">80</server>
+
+        <!-- Elgg -->
+        <const name="ELGG_PHPUNIT">true</const>
+        <includePath>./vendor/elgg/elgg</includePath>
+        <includePath>./../../engine/start.php</includePath>
+    </php>
+</phpunit>
