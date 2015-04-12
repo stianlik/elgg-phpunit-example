@@ -1,15 +1,16 @@
 {
     "name": "foogile/elgg-phpunit",
-    "description": "PHPUnit setup for Elgg",
+	"type": "elgg-plugin",
+    "description": "PHPUnit example plugin for Elgg",
     "license": "GPLv3",
+	"keywords": [ "elgg", "phpunit" ],
     "authors": [
         {
             "name": "Stian Liknes",
             "email": "stianlik@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
     "require": {
-        "elgg/elgg": "dev-master"
+		"composer/installers": ">=1.0.8"
     }
 }

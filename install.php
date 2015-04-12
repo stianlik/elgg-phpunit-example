@@ -5,12 +5,11 @@
  */
 
 // Prepare environment
-$_SERVER['SERVER_PORT'] = 80;
-set_include_path('.:./vendor/elgg/elgg:./tests:' . get_include_path());
+$_SERVER['SERVER_PORT'] = 443;
+set_include_path('.:../../:./tests:' . get_include_path());
 
 // Autoloader
-define('ELGG_PHPUNIT_AUTOLOADER', true);
-require_once 'vendor/autoload.php';
+require_once 'engine/load.php';
 
 // Configuration
 global $CONFIG;
@@ -35,7 +34,7 @@ $installer->batchInstall(array(
 	'siteemail' => 'test@test.com',
 	'wwwroot' => 'http://localhost/',
 	'dataroot' => 'data/',
-	'path' => 'vendor/elgg/elgg/',
+	'path' => '',
 
 	// admin account
 	'displayname' => 'Administrator',
