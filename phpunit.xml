@@ -10,7 +10,7 @@
         <const name="ELGG_PHPUNIT">true</const>
         <includePath>./tests</includePath>
 
-		<!-- Root directory for Elgg installation -->
+        <!-- Root directory for Elgg installation -->
         <includePath>./../..</includePath>
     </php>
 </phpunit>
