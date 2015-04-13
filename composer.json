@@ -1,5 +1,5 @@
 {
-    "name": "foogile/elgg-phpunit",
+    "name": "foogile/elgg-phpunit-example",
 	"type": "elgg-plugin",
     "description": "PHPUnit example plugin for Elgg",
     "license": "GPLv3",
@@ -11,6 +11,8 @@
         }
     ],
     "require": {
-		"composer/installers": ">=1.0.8"
-    }
+		"composer/installers": ">=1.0.8",
+        "foogile/elgg-phpunit": "dev-master"
+    },
+	"minimum-stability": "dev"
 }

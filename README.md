@@ -13,7 +13,7 @@ code that use some of Elgg API directly.
 
 This plugin supports integration testing with Elgg by including the core
 in PHPUnit bootstrap script. This can be useful if you need to verify that
-your code interacts correctly with the Elgg data model and similar.
+your code interacts correctly with the Elgg data model or similar.
 
 ## Usage
 
@@ -31,11 +31,13 @@ your code interacts correctly with the Elgg data model and similar.
 4. Install Elgg into test database and activate plugin
 
 	```Shell
-	php install.php
+	php vendor/foogile/elgg-phpunit/install.php
 	```
 
 5. Start testing
 
 	```Shell
-	../../vendor/bin/phpunit
+	phpunit -c vendor/foogile/elgg-phpunit/phpunit.xml
 	```
+
+See https://github.com/stianlik/elgg-phpunit for more information.

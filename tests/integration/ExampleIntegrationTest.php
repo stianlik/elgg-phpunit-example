@@ -1,6 +1,6 @@
 <?php
 
-class ExampleTest extends PHPUnit_Framework_TestCase
+class ExampleIntegrationTest extends PHPUnit_Framework_TestCase
 {
     public function test_plugin_shouldExist()
     {
