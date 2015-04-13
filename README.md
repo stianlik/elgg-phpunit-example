@@ -4,6 +4,19 @@ This is an example plugin for unit testing in Elgg. For your own plugins you
 can probably do not need `install.php`, it is included so that you don't have
 to worry about installing Elgg and activate the plugin manually.
 
+## Unit testing
+
+This setup is not required for pure unit testing, however it can be useful for
+code that use some of Elgg API directly.
+
+## Integration testing
+
+This plugin supports integration testing with Elgg by including the core
+in PHPUnit bootstrap script. This can be useful if you need to verify that
+your code interacts correctly with the Elgg data model and similar.
+
+## Usage
+
 1. Install Elgg
 
 2. Clone this repository into Elggs plugin directory
